@@ -1,0 +1,33 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww18100\viewh14180\viewkind0
+\deftab720
+\pard\pardeftab720\sl360\sa240\partightenfactor0
+
+\f0\fs32 \cf2 \expnd0\expndtw0\kerning0
+\
+Basic outline of the problem: \
+In under-resourced settings, laboratory diagnostics are often too expensive or too slow to do for every child.  Thus, most diagnosis and treatment is done based on clinical presentation, or a \'93case definition\'94, and the intuition/experience of the physician.  This can often be critical for severe infections, where the cost of getting a diagnosis wrong can be quite serious. \
+These data represent 480 children that were enrolled in a study of central nervous system (CNS) infections at Mbarara Hospital in Uganda.  Children were enrolled because the presented with symptoms consistent with CNS infection.  The intake variables and initial diagnosis were recorded and then an exhaustive battery of tests was conducted to try to identify the infectious agent.  In 219 kids, the agent could not be identified (this is not uncommon, even in western settings), the remaining children were classified into 11 other groups. \
+The critical diseases here are cerebral malaria and bacterial meningitis. Cerebral malaria is caused by Plasmodium flaciparum, and is a severe complication of normal malaria.  Bacterial meningitis is an infection of the meninges and can be caused by multiple bacterial agents.  Both are very severe and have distinct and separate courses of treatment.  Bacterial meningitis is treated with antibiotics.  \
+Malaria (non cerebral presentation) is very common in this setting.  Both malaria and meningitis tend to be seasonal, as are many of the other causes of infection found in this study.\
+There are several possible things to be done with this dataset, but the first is just to characterize a classifier for discriminating between cerebral malaria, bacterial meningitis, and other at intake.  Going further than that to classify the other outcomes would be great too.  Basically, this is developing a more nuanced and locally specific \'93case definition\'94.  What interests me as a \'93big picture\'94 is that the case definition for any focal disease of interest (e.g. here cerebral malaria and bacterial meningitis) should probably be context specific, because the relative proportion of all the non-focal infections (all the noise) is likely to vary from place to place, and over time.  So a larger program of active, highly specific surveillance (like what was done in this study) could be incorporated into routine surveillance systems to allow such continual evaluation.\
+###########################\
+The study was much more detailed than I\'92ve described above.  The entire treatment history of each child was tracked as well as follow-up outcomes.  So there is a lot to look at there as well \'97 e.g. rather than focussing on the agent, focussing on kids with positive/negative outcomes. \
+There was a full battery of tests performed for each kid as well, some, like the malaria rapid diagnostic test (RDT) are comparatively easy to use in the clinic setting and so could be considered as something that would be used frequently.  Others, like PCR or bacterial culture are either too expensive or too slow to be of any practical use in general.  However,  there is an interesting separate question about being able to classify which patients should the more expensive tests be done on \'97 e.g. which ones aren\'92t so clear at intake to make the tests redundant, but also are highly likely to have an informative test result (e.g. not one of the 219 that couldn\'92t be identified by any test).\
+\
+\pard\pardeftab720\sl360\sa240\partightenfactor0
+\cf2 ###########################\cf2 \
+The decision process here is an interesting one.  You want to do the best thing for each child \'97 and there is a strong argument that maybe you should ignore diagnosis and just treat every kid aggressively for both cerebral malaria and bacterial meningitis.  Obviously, the latter raises eyebrows by western standards about overuse of antibiotics and resistance evolution, but these are severely sick young kids, so many argue to minimize the risk of death to each child rather than the risk of antibiotic resistance.  With that said, the following quotes from the Epicentre/MSF report on this study provide useful context:\
+	More than half of the children received treatments prior admission. The main treatments received were quinine and benzyl penicillin. 
+\fs24 \
+\pard\pardeftab720\sl360\sa240\partightenfactor0
+
+\fs32 \cf2 	With regard to laboratory\uc0\u8208 confirmed malaria or bacterial infections, appropriate treatment was received by most children during hospitalization, although about 15% with confirmed malaria or bacterial infection did not get appropriate treatment on the day of admission, but they eventually all received antimalarials and antibiotics. This calls for rapid point\u8208 of\u8208 care tests which can be used for screening and as point of reference to initiate lifesaving medications to severely ill children. Only two children with malaria and/or bacterial meningitis did not receive appropriate treatment over hospitalization, both of whom died. One child had a mixed bacterial\u8208 malaria infection and was treated for malaria only. This supports the need for further discussion as to whether it is appropriate to administer both antimalarials and antibiotics to severely ill children at lower health units or at admission prior to laboratory confirmation and to develop rapid tests for identifying life\u8208 threatening bacterial infections. 
+\fs24 \
+
+\fs32 	With regard to laboratory\uc0\u8208 confirmed malaria or bacterial infections, appropriate treatment was received by most children during hospitalization, although about 15% with confirmed malaria or bacterial infection did not get appropriate treatment on the day of admission, but they eventually all received antimalarials and antibiotics. This calls for rapid point\u8208 of\u8208 care tests which can be used for screening and as point of reference to initiate lifesaving medications to severely ill children. 
+\fs24 \
+}
