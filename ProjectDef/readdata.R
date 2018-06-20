@@ -67,52 +67,52 @@ features <- c(
   "muscle",     #binary: muscle/joint ache
   "conv",       #binary: convulsions
   #vital signs
-  "temp",       #numeric: temperature in celsius 
-  "card",       #integer: heartrate bpm
-  "resp",       #integer: respiration pm
-  "sbp",        #integer: systolic mm Hg  
-  "dbp",        #integer: diastolic mm Hg
-  "weight",     #numeric: weight in kg
-  "height",     #numeric: height in cm
-  "muac",       #numeric: mean upper arm circumfirence
+  "temp",       #numeric: temperature in celsius .
+  "card",       #integer: heartrate bpm          .
+  "resp",       #integer: respiration pm         .
+  "sbp",        #integer: systolic mm Hg         . 367  measurements
+  "dbp",        #integer: diastolic mm Hg        . same
+  "weight",     #numeric: weight in kg           .
+  "height",     #numeric: height in cm           .
+  "muac",       #numeric: mean upper arm circumfirence .
   #clinical measures
-  "glasgow",    #binary: glasgow score at inclusion, 1 if recorded, 9 if NA
-  "glasgeye",   #categorical -- larger value more severe, scale different for less/over 4y
-  "glasgmot",   #categorical as above
-  "glasgverb",  #categorical as above
-  "glasgtot",   #integer: sum of above 3 
-  "blantyre",   #binary: blantyre score at inclusion, 1 if recorded, 9 if NA
-  "blanteye",   #categorical -- larger value more severe
-  "blantmot",   #categorical -- larger value more severe  
-  "blantverb",  #categorical -- larger value more severe  
-  "blanttot",   #integer: sum of above 3 
-  "clinjaund",  #binary: jaundice  
-  "clinhepato", #binary: hepatomegaly
-  "clinspleno", #binary: slenomegaly
-  "clinconv",   #binary: convulsions
-  "clindehyd",  #binary: dehydration
-  "clinoedem",  #binary: oedematous malnutrition
-  "clinlymph",  #binary: lymphadenopathy
-  "clinresp",   #binary: respiratory distress
-  "clinablung", #binary: abnormal lung auscultation
-  "clincyan",   #binary: cyanosis
-  "clincapref", #binary: delayed capillary refill  
-  "clincoldext", #binary: cold extremities
-  "clinearinf",  #binary: ear infection  
-  "clinanemia",  #binary decompensated anemia
-  "clintonsil", #binary: tonsilitis
-  "clinorcand", #binary: oral candidiasis
-  "clinhemmor", #binary: skin sepsis
-  "clinaids",   #binary: clinical suspicion of AIDS
+  "glasgow",    #binary: glasgow score at inclusion, 1 if recorded, 9 if NA ,
+  "glasgeye",   #categorical -- larger value more severe, scale different for , less/over 4y
+  "glasgmot",   #categorical as above ,
+  "glasgverb",  #categorical as above ,
+  "glasgtot",   #integer: sum of above 3 .
+  "blantyre",   #binary: blantyre score at inclusion, 1 if recorded, 9 if NA ,
+  "blanteye",   #categorical -- larger value more severe ,
+  "blantmot",   #categorical -- larger value more severe ,
+  "blantverb",  #categorical -- larger value more severe ,
+  "blanttot",   #integer: sum of above 3 .
+  "clinjaund",  #binary: jaundice       .
+  "clinhepato", #binary: hepatomegaly   .
+  "clinspleno", #binary: slenomegaly    .
+  "clinconv",   #binary: convulsions    .
+  "clindehyd",  #binary: dehydration    .
+  "clinoedem",  #binary: oedematous malnutrition .
+  "clinlymph",  #binary: lymphadenopathy         .
+  "clinresp",   #binary: respiratory distress    .
+  "clinablung", #binary: abnormal lung auscultation   .
+  "clincyan",   #binary: cyanosis                     .
+  "clincapref", #binary: delayed capillary refill     .
+  "clincoldext", #binary: cold extremities            .
+  "clinearinf",  #binary: ear infection              .
+  "clinanemia",  #binary decompensated anemia        .
+  "clintonsil", #binary: tonsilitis                  .
+  "clinorcand", #binary: oral candidiasis            .
+  "clinhemmor", #binary: skin sepsis                 .
+  "clinaids",   #binary: clinical suspicion of AIDS  .
   #diagnosis at inclusion - main
-  "dimain",     #categorical: main diagnosis at inclusion: 1=meningitis, 2=cerbral malaria, 3=meningoencephalitis, 4=other
-  "dimainsp",    #text: explanation of "other" above
+  "dimain",     #categorical: main diagnosis at inclusion: 1=meningitis, 2=cerbral malaria, 3=meningoencephalitis, 4=other .
+  "dimainsp",    #text: explanation of "other" above ,
   #diagnosis at inclusion - others
-  "digast",     #binary: gastroenteritis  
-  "diaids",     #binary: AIDS
-  "dilrti",     #binary: lower respoiratory tract infection 
-  "disepsis",   #binary: sepsis
-  "dimalnut"    #binary: severe malnutrition
+  "digast",     #binary: gastroenteritis  ,
+  "diaids",     #binary: AIDS  ,
+  "dilrti",     #binary: lower respoiratory tract infection ,
+  "disepsis",   #binary: sepsis ,
+  "dimalnut"    #binary: severe malnutrition ,
 )
 
 labels <- dat$diag
