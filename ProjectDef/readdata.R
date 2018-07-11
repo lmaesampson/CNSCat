@@ -5,7 +5,7 @@ dat <- read.dta13("cnsfinall2.dta",convert.factors = FALSE)
 
 features <- c(
   "indate", #text: date of admission YYYY-MM-DD
-  #inclusion measures
+  #inclusion measures - at least one needs to be true
   "incblant9", #binary: if child <9m, Blantyre score <4  
   "incblant",  #binary: if child >=9m, Blantyre score <4 
   "incglasg",  #binary: Glasgow score <15
@@ -40,17 +40,17 @@ features <- c(
   "clptrauma",  #binary: Acute trauma of the spinal cord
   #medical history
   "sex",        #binary: sex M/F
-  "dob",        #text: date of birth -- YYYY-MM-DD
-  "dobdk",      #binary: date of birth unkonwn
-  "ageyrs",     #integer: age years
-  "agemth",     #integer: age months -- total age is both Y+M
-  "mhhosp",     #binary: history of hospitalizaiton in the previous month
-  "mhhospad",   #text: date of prior hospitalization admission
-  "mhhospdur",  #integer: duraiton of prior hosptalization (days)
-  "mhdevsp",    #text: signivicant developmental disability 
-  "mhsickle",   #binary: sickle cell disease  
-  "mhchronstat", #binary: presence of chronic disease
-  "mhchronsp",  #text: chronic disease
+  "dob",        #text: date of birth -- YYYY-MM-DD  ,
+  "dobdk",      #binary: date of birth unkonwn      ,
+  "ageyrs",     #integer: age years                 ,
+  "agemth",     #integer: age months -- total age is both Y+M .
+  "mhhosp",     #binary: history of hospitalizaiton in the previous month .
+  "mhhospad",   #text: date of prior hospitalization admission  ,
+  "mhhospdur",  #integer: duraiton of prior hosptalization (days) ,
+  "mhdevsp",    #text: signivicant developmental disability . (mapped to yes/no)
+  "mhsickle",   #binary: sickle cell disease  (Um. 'No', '3.0', NaN, and 'Yes')
+  "mhchronstat", #binary: presence of chronic disease .
+  "mhchronsp",  #text: chronic disease ,
   #vaccine history
   "vacbcg",     #categorical: BCG vaccine for tuberculosis 1=Y w/card, 2=Y verbal, 3=no, 4=UNK
   "vacmeasles", #as vacbcg for measles vaccine
@@ -60,12 +60,12 @@ features <- c(
   "vacmen",    #as vacbcg for meningitis vaccine
   "vacpneumo", #as vacbcg for pneumococcal vaccine
   #clincial measures 
-  "abdpain",    #binary: abdominal pain at inclusion 
-  "vom",        #binary: vomiting >2 episodes in 24h
-  "diar",       #binary: diarrhoea >3 stools in 24h
-  "head",       #binary: headache
-  "muscle",     #binary: muscle/joint ache
-  "conv",       #binary: convulsions
+  "abdpain",    #binary: abdominal pain at inclusion    .
+  "vom",        #binary: vomiting >2 episodes in 24h    .
+  "diar",       #binary: diarrhoea >3 stools in 24h     .
+  "head",       #binary: headache                       .
+  "muscle",     #binary: muscle/joint ache              .
+  "conv",       #binary: convulsions                    .
   #vital signs
   "temp",       #numeric: temperature in celsius .
   "card",       #integer: heartrate bpm          .
@@ -105,7 +105,7 @@ features <- c(
   "clinhemmor", #binary: skin sepsis                 .
   "clinaids",   #binary: clinical suspicion of AIDS  .
   #diagnosis at inclusion - main
-  "dimain",     #categorical: main diagnosis at inclusion: 1=meningitis, 2=cerbral malaria, 3=meningoencephalitis, 4=other .
+  "dimain",     #categorical: main diagnosis at inclusion: 1=meningitis, 2=cerbral malaria, 3=meningoencephalitis, 4=other        .
   "dimainsp",    #text: explanation of "other" above ,
   #diagnosis at inclusion - others
   "digast",     #binary: gastroenteritis  ,
