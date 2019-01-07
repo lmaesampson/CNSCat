@@ -4,22 +4,24 @@ Given clinical data from approximately 400 children in a Ugandan hospital, we ex
 We also explore this problem as one of assessing different operational strategies. Is it 'best' to follow doctor's best guesses, the output of our classifier, or simply to treat all of the children with all available medications at intake?
 
 **Contributors**
+
 Laura Sampson, post-doc at CIDD at Penn State University
+
 Michael Williams, graduate student at Vanderbilt University
 
 # Folder Contents:
 
-**Project Def**
+**Project Def**:
 Statement of problem, raw data, definition of variables in raw data, etc.
 
-**LogisticReg**
+**LogisticReg**:
 Logistic regression as implemented by Michael
 
-**Exploratory Analysis**
+**Exploratory Analysis**:
 Michael's initial passes at working with the data and implementing regression
 
-**Code**
+**Code**:
 Laura's various codes - decision tree, data cleaning, logistic regression, assessment of operational strategies.
 
-**Data**
+**Data**:
 Data files with some initial cleaning completed.
