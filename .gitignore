@@ -1,3 +1,5 @@
-*/.DS_Store
+**/.DS_Store
 Code/.ipynb_checkpoints
-*/*.pkl
+**/*.pkl
+**/*.json
+**/*.npz
