@@ -14,14 +14,18 @@ Michael Williams, graduate student at Vanderbilt University
 **Project Def**:
 Statement of problem, raw data, definition of variables in raw data, etc.
 
-**LogisticReg**:
+**Michael**:
+All of Michael's analysis. This include
+
+*Logistic Regression*:
 Logistic regression as implemented by Michael
 
-**Exploratory Analysis**:
+*Exploratory Analysis*:
 Michael's initial passes at working with the data and implementing regression
 
-**Code**:
+**Laura**
+*Code*:
 Laura's various codes - decision tree, data cleaning, logistic regression, assessment of operational strategies.
 
-**Data**:
+*Data*:
 Data files with some initial cleaning completed.
